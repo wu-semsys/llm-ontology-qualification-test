@@ -1,4 +1,4 @@
-# Benchmarking Knowledge Validations Skills of LLMs
+# LLM Ontology Qualification Test
 
 This project is designed to process and evaluate prompts using various Language Model (LLM) APIs. It includes scripts for handling different AI models and utilities for processing and saving results.
 
