@@ -1,0 +1,77 @@
+Section 3: Expert Knowledge
+This section tests your ability to reason with ontology models, as
+well as compare and relate them to each other.
+Let's think step by step.
+Consider models A and B both describing PetLoverTypeE, each
+represented in 3 equivalent formalisms (TTL | Rector | Warren)
+and answer question 6 below.
+Model A: PetLoverTypeE
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeE rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:allValuesFrom [
+rdf:type owl:Class;
+owl:unionOf (:Dog :Cat)
+]];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:someValuesFrom :Dog
+];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:someValuesFrom :Cat
+];
+rdfs:label "PetLoverTypeE"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Dog rdf:type owl:Class;
+rdfs:label "Dog"@en .
+# –––––––––––––- Class 2––––––––––––-
+:Cat rdf:type owl:Class;
+rdfs:label "Cat"@en .
+# –––––––––––––- Property 0 ––––––––––––-
+:hasPet rdf:type owl:ObjectProperty;
+rdfs:label "hasPet"@en;
+rdfs:domain :PetLoverTypeE;
+rdfs:range [ rdf:type owl:Class;
+owl:unionOf ( :Dog :Cat )
+].
+Rector: PetLoverTypeE has, amongst other things, some Cat pets and
+some Dog pets and also only Cat and Dog pets.
+Warren: PetLoverTypeE has, amongst other things, at least one Cat
+pet and at least one Dog pet and also no other than Cat and Dog
+pets.
+Model B: PetLoverTypeE
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeE rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:someValuesFrom :Dog
+];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:someValuesFrom :Cat
+];
+rdfs:label "PetLoverTypeE"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Dog rdf:type owl:Class;
+rdfs:label "Dog"@en .
+# –––––––––––––- Class 2––––––––––––-
+:Cat rdf:type owl:Class;
+rdfs:label "Cat"@en .
+Rector: PetLoverTypeE has, amongst other things, some Cat pets and
+some Dog pets.
+Warren: PetLoverTypeE has, amongst other things, at least one Cat
+pet and at least one Dog pet.
+Question 6. Select the correct statement about models A and B
+describing PetLoverTypeE.
+a) Model A allows for instances of PetLoverTypeE to have a pet that
+is neither a Dog nor a Cat.
+b) Model B allows for instances of PetLoverTypeE to have a pet that
+is neither a Dog nor a Cat.
+c) None of the models allow for instances of PetLoverTypeE to have a
+pet that is neither a Dog nor a Cat.
+d) Both models allow for instances of PetLoverTypeE to have a pet
+that is neither a Dog nor a Cat.

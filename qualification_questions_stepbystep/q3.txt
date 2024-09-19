@@ -1,0 +1,27 @@
+Let's think step by step.
+Consider the model, represented in 3 equivalent formalisms (TTL |
+Rector | Warren) and answer question 4 below.
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeB rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:someValuesFrom :Cat
+];
+rdfs:label "PetLoverTypeB"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Cat rdf:type owl:Class;
+rdfs:label "Cat"@en .
+Rector: PetLoverTypeB has, amongst other things, some Cat pets.
+Warren:PetLoverTypeB has, amongst other things, at least one Cat
+pet.
+Q4: Select the statement that describes instances of PetLoverTypeB
+correctly.
+a) Instances of PetLoverTypeB must have a Cat pet and cannot have
+other types of pets.
+b) Instances of PetLoverTypeB might not have a Cat pet and cannot
+have other types of pets.
+c) Instances of PetLoverTypeB must have a Cat pet and can also have
+other types of pets.
+d) Instances of PetLoverTypeB might not have a Cat pet and can also
+have other types of pets.

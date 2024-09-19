@@ -1,0 +1,12 @@
+Consider the model, represented in Rector formalisms and answer question 4 below.
+Rector: PetLoverTypeB has, amongst other things, some Cat pets.
+Q4: Select the statement that describes instances of PetLoverTypeB
+correctly.
+a) Instances of PetLoverTypeB must have a Cat pet and cannot have
+other types of pets.
+b) Instances of PetLoverTypeB might not have a Cat pet and cannot
+have other types of pets.
+c) Instances of PetLoverTypeB must have a Cat pet and can also have
+other types of pets.
+d) Instances of PetLoverTypeB might not have a Cat pet and can also
+have other types of pets.

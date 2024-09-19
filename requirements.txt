@@ -1,0 +1,10 @@
+tqdm
+colorama
+openai
+google-generativeai
+ollama
+anthropic
+together
+groq
+pandas
+openpyxl

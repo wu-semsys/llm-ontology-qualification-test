@@ -1,0 +1,39 @@
+Consider models A and B describing PetLoverTypeG and PerLoverTypeF,
+each represented in 3 equivalent formalisms (TTL| Rector | Warren)
+and answer question 8 below.
+Model A: PetLoverTypeG
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeG rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:allValuesFrom :not_Dog
+];
+rdfs:label "PetLoverTypeG"@en .
+# –––––––––––––- Class 1––––––––––––-
+:not_Dog rdf:type owl:Class;
+rdfs:label "not Dog"@en .
+Rector: PetLoverTypeG has, amongst other things, only pets that are
+not Dogs.
+Warren: PetLoverTypeG has, amongst other things, pets that are no
+other than not Dogs.
+Model B: PerLoverTypeF
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeF rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:allValuesFrom :Dog
+];
+rdfs:label "PetLoverTypeF"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Dog rdf:type owl:Class;
+rdfs:label "Dog"@en .
+Rector: PetLoverTypeF has, amongst other things, only Dog pets.
+Warren: PetLoverTypeF has, amongst other things, no other than Dog
+pets.
+Question 8. Is it true that PetLoverTypeG is disjoint to
+PetLoverTypeF? That is, there can be no instance that is at the
+same time of type PetLoverTypeG and PetLoverTypeF.
+a) Yes
+b) No

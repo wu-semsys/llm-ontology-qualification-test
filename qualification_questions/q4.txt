@@ -1,0 +1,36 @@
+Consider the model, represented in 3 equivalent formalisms (TTL |
+Rector | Warren) and answer question 5 below.
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PetLoverTypeC rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:allValuesFrom :Cat
+];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasPet;
+owl:allValuesFrom :Dog
+];
+rdfs:label "PetLoverTypeC"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Dog rdf:type owl:Class;
+rdfs:label "Dog"@en;
+owl:disjointWith :Cat .
+# –––––––––––––- Class 2––––––––––––-
+:Cat rdf:type owl:Class;
+rdfs:label "Cat"@en;
+owl:disjointWith :Dog .
+Rector: PetLoverTypeC has, amongst other things, only Cat pets and
+only Dog pets. There are no individuals that can be both of type
+Dog and type Cat.
+Warren: PetLoverTypeC has, amongst other things, no other than Cat
+pets and no other than Dog pets. There are no individuals that can
+be both of type Dog and type Cat.
+Q5. Select the statement that correctly represents instances of
+PetLoverTypeC.
+a) Instances of PetLoverTypeC must have 2 pets - a Dog and a Cat.
+b) Instances of PetLoverTypeC might have 2 pets - a Dog and a Cat
+but also might not have any pets.
+c) Instances of PetLoverTypeC cannot have any pets.
+d) Instances of PetLoverTypeC could have 0 to n pets from type Cat
+or 0 to n pets from type Dog but not both.

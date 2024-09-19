@@ -1,0 +1,15 @@
+Section 2: Some Knowledge
+This section tests your understanding of the implications of
+ontology axioms and restrictions.
+Consider the model, represented in Rector formalisms and answer question 3 below.
+Rector: PetLoverTypeA has, amongst other things, only Dog pets.
+Q3. Select the statement that describes instances of PetLoverTypeA
+correctly.
+a) Instances of PetLoverTypeA must have a Dog pet and cannot have
+other types of pets.
+b) Instances of PetLoverTypeA might not have a Dog pet and cannot
+have other types of pets.
+c) Instances of PetLoverTypeA must have a Dog pet and can also have
+other types of pets.
+d) Instances of PetLoverTypeA might not have a Dog pet and can also
+have other types of pets.

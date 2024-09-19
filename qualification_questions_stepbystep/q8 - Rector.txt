@@ -1,0 +1,12 @@
+Let's think step by step.
+Consider models A and B describing PetLoverTypeD and PerLoverTypeH, each represented in Rector formalisms and answer question 9 below.
+
+Model A: PetLoverTypeD
+Rector: PetLoverTypeD has, amongst other things, some pets that are not Dogs.
+Model B: PerLoverTypeH
+Rector: PetLoverTypeH has, amongst other things, some Dog pets.
+
+Question 9. Is it true that PetLoverTypeD is disjoint to PetLoverTypeH? That is, there can be no instance that is at the same time of type PetLoverTypeD and PetLoverTypeH.
+
+a) Yes
+b) No

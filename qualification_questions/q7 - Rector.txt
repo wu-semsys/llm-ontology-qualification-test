@@ -1,0 +1,12 @@
+Consider models A and B describing PetLoverTypeG and PerLoverTypeF,
+each represented in 3 equivalent formalisms (TTL| Rector | Warren)
+and answer question 8 below.
+Model A: PetLoverTypeG
+Rector: PetLoverTypeG has, amongst other things, only pets that are not Dogs.
+Model B: PerLoverTypeF
+Rector: PetLoverTypeF has, amongst other things, only Dog pets.
+Question 8. Is it true that PetLoverTypeG is disjoint to
+PetLoverTypeF? That is, there can be no instance that is at the
+same time of type PetLoverTypeG and PetLoverTypeF.
+a) Yes
+b) No

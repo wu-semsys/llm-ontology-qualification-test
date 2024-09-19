@@ -1,0 +1,45 @@
+Section 1: Little Knowledge
+This section tests your understanding of basic ontology components
+and the ability to recognise them in graphical and textual
+representations.
+Let's think step by step.
+Consider the model, represented in 3 equivalent formalisms (TTL |
+Rector | Warren) and answer questions 1 & 2 below.
+TTL:
+# –––––––––––––- Class 0––––––––––––-
+:PersonTypeA rdf:type owl:Class;
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasSon;
+owl:someValuesFrom :Son
+];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasDog;
+owl:allValuesFrom :Dog
+];
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty :hasDaughter;
+owl:someValuesFrom :Daughter
+];
+rdfs:label "PersonTypeA"@en .
+# –––––––––––––- Class 1––––––––––––-
+:Son rdf:type owl:Class;
+rdfs:label "Son"@en .
+# –––––––––––––- Class 2––––––––––––-
+:Dog rdf:type owl:Class;
+rdfs:label "Dog"@en .
+# –––––––––––––- Class 3––––––––––––-
+:Daughter rdf:type owl:Class;
+rdfs:label "Daughter"@en .
+Rector: PersonTypeA has, amongst other things, some daughters, and
+some sons, and also only dog pets.
+Warren: PersonTypeA has, amongst other things, at least one
+daughter, at least one son, and also no other than dog pets.
+Question:
+1. Identify the main model components from the model
+- How many named classes can you identify from the model?
+- How many relations can you identify from the model?
+2. Identifying the different quantifiers from the model
+- How many universal restrictions (owl:allValuesFrom) can you
+identify in the model?
+- How many existential restrictions (owl:someValuesFrom) can you
+identify in the model?
