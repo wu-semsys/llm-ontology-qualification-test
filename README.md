@@ -1,6 +1,6 @@
 # LLM Ontology Qualification Test
 
-This project is designed to process and evaluate prompts using various Language Model (LLM) APIs. It includes scripts for handling different AI models and utilities for processing and saving results.
+This project is designed to process and evaluate prompts using various Language Model (LLM) APIs.
 
 ## Project Context
 
@@ -110,5 +110,3 @@ MIT
 
 For more information about the team members involved in this project, please visit:
 [Semantic Systems Research Group](https://semantic-systems.org/team/)
-
-Project Link: [https://github.com/yourusername/your-repo-name](https://github.com/yourusername/your-repo-name)
