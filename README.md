@@ -1,6 +1,6 @@
 # LLM Ontology Qualification Test
 
-This project is designed to process and evaluate prompts using various Language Model (LLM) APIs.
+This project is designed to process and evaluate ontology validation using various Language Model (LLM) APIs.
 
 ## Project Context
 
